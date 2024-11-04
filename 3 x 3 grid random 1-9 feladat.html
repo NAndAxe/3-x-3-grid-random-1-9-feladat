@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="3 x 3 grid random 1-9 feladat.js"></script>
+    <title>3 x 3 grid</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .grid {
+            margin-bottom: 15px;
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+        }
+        .grid div {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 1.5px solid black;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="grid" id="gridall">
+                <div id="value1">1</div>
+                <div id="value2">2</div>
+                <div id="value3">3</div>
+                <div id="value4">4</div>
+                <div id="value5">5</div>
+                <div id="value6">6</div>
+                <div id="value7">7</div>
+                <div id="value8">8</div>
+                <div id="value9">9</div>
+            </div>
+            <button onclick="Kiirasa()">Keverés</button>
+        </div>
+</body>
+</html>
